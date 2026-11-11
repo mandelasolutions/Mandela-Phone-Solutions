@@ -1,4 +1,10 @@
 
+/* =================================
+   MANDELA PHONE SOLUTIONS
+   TECHNICAL PORTAL DESIGN
+================================= */
+
+
 /* GENERAL SETTINGS */
 
 * {
@@ -13,47 +19,68 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background: #f4f4f4;
     color: #222;
-    text-align: center;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 
 
-/* NAVIGATION MENU */
+/* NAVIGATION BAR */
 
 .navbar {
-    background-color: #080808;
-    padding: 22px 5%;
+    background: #080808;
+    padding: 14px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     border-bottom: 3px solid #d4af37;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
 }
 
 .logo {
-    color: #d4af37;
-    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 19px;
     font-weight: bold;
 }
 
 .logo span {
-    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo small {
+    color: #d4af37;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.brand-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
 }
 
 .nav-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 23px;
 }
 
 .nav-links a {
     color: white;
-    text-decoration: none;
+    font-size: 13px;
     font-weight: bold;
-    font-size: 14px;
-    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -61,40 +88,43 @@ body {
 }
 
 
-/* HOME / HERO SECTION */
+/* HERO SECTION */
 
 .hero {
-    background: linear-gradient(145deg, #080808, #292929);
+    background:
+        radial-gradient(circle at top right, #393018, transparent 40%),
+        linear-gradient(135deg, #050505, #202020);
     color: white;
-    padding: 100px 20px;
+    text-align: center;
+    padding: 110px 20px;
     border-bottom: 4px solid #d4af37;
 }
 
 .welcome {
     color: #d4af37;
-    font-size: 18px;
     letter-spacing: 4px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 
 .hero h1 {
     color: #d4af37;
-    font-size: 42px;
+    font-size: 43px;
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
 
 .hero h2 {
-    color: white;
     font-size: 25px;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     margin-bottom: 25px;
 }
 
 .hero-description {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 30px;
+    max-width: 680px;
+    margin: auto auto 30px;
+    font-size: 17px;
+    color: #ddd;
 }
 
 .hero-buttons {
@@ -106,159 +136,317 @@ body {
 
 .btn {
     display: inline-block;
-    background-color: #d4af37;
+    background: #d4af37;
     color: #080808;
-    padding: 14px 28px;
-    border-radius: 30px;
-    text-decoration: none;
+    padding: 13px 27px;
+    border-radius: 5px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: white;
+    background: white;
     transform: translateY(-4px);
 }
 
 .btn-outline {
-    background-color: transparent;
+    background: transparent;
     color: #d4af37;
     border: 2px solid #d4af37;
+}
+
+
+/* SEARCH SECTION */
+
+.search-section {
+    background: #fff;
+    padding: 55px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-section h2 {
+    color: #171717;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.search-section p {
+    color: #666;
+    margin-bottom: 22px;
+}
+
+.search-box {
+    max-width: 650px;
+    margin: auto;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 17px 22px;
+    border: 2px solid #d4af37;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+    background: #fafafa;
+}
+
+.search-box input:focus {
+    border-color: #080808;
+    box-shadow: 0 0 8px rgba(212,175,55,0.35);
+}
+
+
+/* TECHNICAL PORTAL */
+
+.portal {
+    padding: 80px 5%;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.section-title {
+    color: #a98213;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.portal-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.portal-card {
+    background: white;
+    padding: 32px 22px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    border-bottom: 4px solid #d4af37;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.portal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.14);
+    border-color: #d4af37;
+}
+
+.portal-icon {
+    font-size: 43px;
+    margin-bottom: 15px;
+}
+
+.portal-card h3 {
+    color: #151515;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.portal-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.portal-link {
+    display: inline-block;
+    background: #080808;
+    color: #d4af37;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.portal-link:hover {
+    background: #d4af37;
+    color: #080808;
+}
+
+.no-results {
+    margin-top: 25px;
+    color: #a98213;
+    font-weight: bold;
+}
+
+
+/* PORTAL DETAILS */
+
+.portal-details {
+    background: #fff;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.portal-details-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.portal-detail {
+    background: #f8f8f8;
+    padding: 30px 22px;
+    border: 1px solid #ddd;
+    border-left: 4px solid #d4af37;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    scroll-margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.portal-detail:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.portal-detail h3 {
+    color: #151515;
+    margin-bottom: 12px;
+}
+
+.portal-detail p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.portal-detail a {
+    display: inline-block;
+    color: #a98213;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 4px;
+}
+
+.portal-detail a:hover {
+    color: #080808;
 }
 
 
 /* SERVICES SECTION */
 
 .services {
-    padding: 70px 20px;
-    background-color: #f5f5f5;
-}
-
-.section-title {
-    color: #b38b16;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.section-description {
-    color: #555;
-    font-size: 17px;
-    margin-bottom: 35px;
-    line-height: 1.6;
+    background: white;
+    padding: 80px 5%;
+    text-align: center;
 }
 
 .service-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 30px;
     max-width: 1100px;
     margin: auto;
 }
 
 .service-card {
-    background: linear-gradient(145deg, #222, #080808);
+    background: #111;
     border: 2px solid #d4af37;
-    border-radius: 15px;
+    border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-    transition: 0.3s ease;
     overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .service-card img {
-    display: block;
     width: 100%;
     height: 240px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .service-card h3 {
     color: #d4af37;
-    font-size: 21px;
-    margin-top: 20px;
-    margin-bottom: 12px;
+    margin: 18px 0 10px;
 }
 
 .service-card p {
     color: white;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
-    border-color: #f5d76e;
+    font-size: 14px;
 }
 
 
-/* ABOUT US SECTION */
+/* ABOUT SECTION */
 
 .about {
-    background-color: white;
-    padding: 60px 25px;
-    margin: 40px auto;
-    max-width: 900px;
-    border-radius: 15px;
+    background: #fff;
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 65px 30px;
+    text-align: center;
+    border-radius: 10px;
     border-bottom: 4px solid #d4af37;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
 }
 
 .about p {
-    color: #444;
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 18px;
+    color: #555;
+    font-size: 16px;
+    margin: 15px 0;
 }
 
 .about h3 {
-    color: #b38b16;
-    margin: 25px 0 15px;
-    font-size: 22px;
+    color: #a98213;
+    margin-top: 30px;
 }
 
 
 /* CONTACT SECTION */
 
 .contact {
-    background-color: #eeeeee;
-    padding: 60px 20px;
+    background: #eee;
+    padding: 70px 20px;
+    text-align: center;
     border-top: 3px solid #d4af37;
 }
 
 .contact > p {
+    margin: 15px 0;
     color: #444;
-    font-size: 17px;
-    line-height: 1.7;
-    margin: 20px 0;
 }
 
 .contact-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 14px;
     margin: 30px 0;
 }
 
 .contact-buttons a {
-    display: inline-block;
     width: 100%;
-    max-width: 350px;
-    background-color: #080808;
+    max-width: 370px;
+    padding: 14px 20px;
+    background: #080808;
     color: #d4af37;
     border: 2px solid #d4af37;
-    padding: 15px 20px;
-    border-radius: 30px;
-    text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 .contact-buttons a:hover {
-    background-color: #d4af37;
+    background: #d4af37;
     color: #080808;
-    transform: translateY(-4px);
 }
 
 .location {
@@ -269,51 +457,64 @@ body {
 /* FOOTER */
 
 footer {
-    background-color: #080808;
+    background: #080808;
     color: white;
-    padding: 40px 20px;
+    text-align: center;
+    padding: 45px 20px;
     border-top: 3px solid #d4af37;
 }
 
 footer h3 {
     color: #d4af37;
     font-size: 23px;
-    margin-bottom: 10px;
 }
 
 footer h4 {
-    color: white;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+    letter-spacing: 4px;
+    margin: 8px 0 18px;
 }
 
 footer p {
-    font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 12px;
+    font-size: 13px;
+    margin: 10px 0;
+    color: #ccc;
 }
 
 
-/* MOBILE RESPONSIVE DESIGN */
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .portal-container,
+    .portal-details-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width: 700px) {
 
     .navbar {
         flex-direction: column;
-        padding: 20px 10px;
+        padding: 18px 10px;
+    }
+
+    .logo {
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .brand-logo {
+        width: 150px;
+        height: 150px;
     }
 
     .nav-links {
         justify-content: center;
-        gap: 15px;
+        gap: 14px;
     }
 
     .nav-links a {
-        font-size: 12px;
-    }
-
-    .logo {
-        font-size: 19px;
+        font-size: 11px;
     }
 
     .hero {
@@ -322,11 +523,10 @@ footer p {
 
     .hero h1 {
         font-size: 27px;
-        letter-spacing: 1px;
     }
 
     .hero h2 {
-        font-size: 20px;
+        font-size: 19px;
         letter-spacing: 3px;
     }
 
@@ -335,24 +535,120 @@ footer p {
     }
 
     .section-title {
-        font-size: 27px;
+        font-size: 26px;
     }
 
+    .portal-container,
+    .portal-details-container,
     .service-container {
         grid-template-columns: 1fr;
     }
 
+    .portal {
+        padding: 60px 18px;
+    }
+
+    .portal-details {
+        padding: 60px 18px;
+    }
+
     .service-card img {
-        height: 220px;
+        height: 210px;
     }
 
     .about {
         margin: 25px 15px;
         padding: 40px 20px;
     }
+}
 
-    .about p {
-        font-size: 15px;
+
+/* =================================
+   FLOATING WHATSAPP ICON
+================================= */
+
+.whatsapp-float {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1000;
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+/* WHATSAPP ICON ONLY */
+
+summary.whatsapp-trigger {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    cursor: pointer;
+    appearance: none;
+}
+
+summary.whatsapp-trigger::-webkit-details-marker {
+    display: none;
+}
+
+summary.whatsapp-trigger::marker {
+    content: "";
+    display: none;
+}
+
+.whatsapp-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* TWO WHATSAPP NUMBERS */
+
+.whatsapp-options {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    width: 175px;
+    padding: 6px;
+    background: #080808;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    flex-direction: column;
+    gap: 5px;
+}
+
+.whatsapp-float[open] .whatsapp-options {
+    display: flex;
+}
+
+.whatsapp-options a {
+    display: block;
+    padding: 8px;
+    background: #25D366;
+    color: white;
+    border-radius: 6px;
+    font-size: 9px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.whatsapp-options a:hover {
+    background: #128C7E;
+}
+
+@media (max-width: 700px) {
+    .whatsapp-float {
+        right: 10px;
+        bottom: 10px;
     }
-
 }

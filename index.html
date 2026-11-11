@@ -1,232 +1,472 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mandela Phone Solutions | Technology Solved</title>
 
+    <meta name="description" content="Mandela Phone Solutions offers phone repair, phone flashing, computer services and software solutions in Zomba, Malawi.">
+    <meta name="keywords" content="Phone Repair, Phone Flashing, Computer Services, Software Solutions, Zomba Malawi">
+    <meta name="author" content="Mandela Phone Solutions">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION MENU -->
-
+    <!-- NAVIGATION BAR -->
     <nav class="navbar">
         <div class="logo">
-            MANDELA <span>PHONE SOLUTIONS</span>
+            <a href="images/logo.png" target="_blank" rel="noopener">
+                <img src="images/logo.png"
+                     alt="Mandela Phone Solutions Logo"
+                     class="brand-logo">
+            </a>
+
+            <span>
+                MANDELA PHONE SOLUTIONS
+                <small>TECHNOLOGY SOLVED</small>
+            </span>
         </div>
 
         <div class="nav-links">
             <a href="#home">HOME</a>
+            <a href="#portal">TECHNICAL PORTAL</a>
             <a href="#services">SERVICES</a>
-            <a href="#about">ABOUT US</a>
+            <a href="#about">ABOUT</a>
             <a href="#contact">CONTACT</a>
         </div>
     </nav>
 
 
-    <!-- HOME SECTION -->
-
-    <section class="hero" id="home">
-
-        <p class="welcome">WELCOME TO</p>
+    <!-- HOME / HERO SECTION -->
+    <header class="hero" id="home">
+        <p class="welcome">WELCOME TO MANDELA PHONE SOLUTIONS</p>
 
         <h1>MANDELA PHONE SOLUTIONS</h1>
-
         <h2>TECHNOLOGY SOLVED</h2>
 
         <p class="hero-description">
-            Your trusted partner for phone repair,
-            computer services and software solutions.
+            Your trusted destination for phone repair,
+            phone flashing, computer services and
+            professional software solutions.
         </p>
 
         <div class="hero-buttons">
             <a href="#services" class="btn">OUR SERVICES</a>
             <a href="#contact" class="btn btn-outline">CONTACT US</a>
         </div>
+    </header>
 
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+        <h2>SEARCH OUR TECHNICAL PORTAL</h2>
+
+        <p>
+            Search for technical information and available services.
+        </p>
+
+        <div class="search-box">
+            <input
+                type="search"
+                id="portalSearch"
+                placeholder="Search firmware, tools, tutorials..."
+                aria-label="Search technical portal">
+        </div>
     </section>
 
 
-    <!-- OUR SERVICES -->
-
-    <section class="services" id="services">
-
-        <h2 class="section-title">OUR SERVICES</h2>
+    <!-- TECHNICAL PORTAL -->
+    <section class="portal" id="portal">
+        <h2 class="section-title">TECHNICAL PORTAL</h2>
 
         <p class="section-description">
-            We provide reliable technology solutions
-            for your devices.
+            Explore our technology categories and technical support services.
         </p>
 
-        <div class="service-container">
+        <div class="portal-container">
 
-            <!-- PHONE REPAIR -->
-
-            <div class="service-card">
-
-                <img
-                    src="images/phone-repair.jpg"
-                    alt="Phone Repair">
-
-                <h3>PHONE REPAIR</h3>
-
+            <div class="portal-card"
+                 data-search="firmware files android samsung huawei software">
+                <div class="portal-icon">📁</div>
+                <h3>FIRMWARE & FILES</h3>
                 <p>
-                    We repair different phone problems
-                    professionally.
+                    Technical information about mobile firmware
+                    and software files.
                 </p>
-
+                <a href="#firmware" class="portal-link">EXPLORE</a>
             </div>
 
-
-            <!-- PHONE FLASHING -->
-
-            <div class="service-card">
-
-                <img
-                    src="images/phone-flashing.jpg"
-                    alt="Phone Flashing">
-
-                <h3>PHONE FLASHING</h3>
-
+            <div class="portal-card"
+                 data-search="mobile phone tools android repair flashing tools">
+                <div class="portal-icon">🛠️</div>
+                <h3>MOBILE TOOLS</h3>
                 <p>
-                    Software installation and phone
-                    system solutions.
+                    Discover mobile phone service tools
+                    and technical repair resources.
                 </p>
-
+                <a href="#mobile-tools" class="portal-link">EXPLORE</a>
             </div>
 
-
-            <!-- COMPUTER SERVICES -->
-
-            <div class="service-card">
-
-                <img
-                    src="images/computer-services.jpg"
-                    alt="Computer Services">
-
-                <h3>COMPUTER SERVICES</h3>
-
+            <div class="portal-card"
+                 data-search="tutorials guides lessons learning technology">
+                <div class="portal-icon">📚</div>
+                <h3>TUTORIALS & GUIDES</h3>
                 <p>
-                    Windows installation and
-                    computer support.
+                    Learn about phone repair, computer
+                    services and technology.
                 </p>
-
+                <a href="#tutorials-guides" class="portal-link">EXPLORE</a>
             </div>
 
-
-            <!-- SOFTWARE SOLUTIONS -->
-
-            <div class="service-card">
-
-                <img
-                    src="images/software-solutions.jpg"
-                    alt="Software Solutions">
-
-                <h3>SOFTWARE SOLUTIONS</h3>
-
+            <div class="portal-card"
+                 data-search="phone solutions mobile repair smartphone">
+                <div class="portal-icon">📱</div>
+                <h3>PHONE SOLUTIONS</h3>
                 <p>
-                    Reliable software support
-                    for your devices.
+                    Explore mobile phone repair,
+                    troubleshooting and software services.
                 </p>
+                <a href="#phone-solutions" class="portal-link">EXPLORE</a>
+            </div>
 
+            <div class="portal-card"
+                 data-search="computer software windows installation pc laptop">
+                <div class="portal-icon">💻</div>
+                <h3>COMPUTER SOFTWARE</h3>
+                <p>
+                    Computer software support,
+                    Windows installation and PC services.
+                </p>
+                <a href="#computer-software" class="portal-link">EXPLORE</a>
+            </div>
+
+            <div class="portal-card"
+                 data-search="technology updates news digital innovation">
+                <div class="portal-icon">🌐</div>
+                <h3>TECHNOLOGY UPDATES</h3>
+                <p>
+                    Discover technology information,
+                    updates and digital innovations.
+                </p>
+                <a href="#technology-updates" class="portal-link">EXPLORE</a>
             </div>
 
         </div>
 
+        <p id="noResults" class="no-results" style="display: none;">
+            No matching results found. Please try another search.
+        </p>
     </section>
 
 
-    <!-- ABOUT US SECTION -->
+    <!-- PORTAL DETAILS -->
+    <section class="portal-details">
+        <h2 class="section-title">EXPLORE OUR CATEGORIES</h2>
 
+        <p class="section-description">
+            Learn more about our technical categories.
+        </p>
+
+        <div class="portal-details-container">
+
+            <article class="portal-detail" id="firmware">
+                <div class="portal-icon">📁</div>
+                <h3>FIRMWARE & FILES</h3>
+                <p>
+                    Find information about official mobile firmware,
+                    device software versions and compatible files.
+                    Always check your exact device model before using
+                    any software file.
+                </p>
+                <a href="#contact">CONTACT FOR SUPPORT</a>
+            </article>
+
+            <article class="portal-detail" id="mobile-tools">
+                <div class="portal-icon">🛠️</div>
+                <h3>MOBILE TOOLS</h3>
+                <p>
+                    Learn about mobile diagnostic tools,
+                    device drivers, backup applications
+                    and phone maintenance software.
+                </p>
+                <a href="#contact">CONTACT FOR SUPPORT</a>
+            </article>
+
+            <article class="portal-detail" id="tutorials-guides">
+                <div class="portal-icon">📚</div>
+                <h3>TUTORIALS & GUIDES</h3>
+                <p>
+                    Explore learning materials about mobile phones,
+                    computer maintenance, software installation
+                    and technology.
+                </p>
+                <a href="#contact">CONTACT FOR SUPPORT</a>
+            </article>
+
+            <article class="portal-detail" id="phone-solutions">
+                <div class="portal-icon">📱</div>
+                <h3>PHONE SOLUTIONS</h3>
+                <p>
+                    Learn about phone troubleshooting,
+                    software support, device maintenance
+                    and professional mobile services.
+                </p>
+                <a href="#contact">CONTACT FOR SUPPORT</a>
+            </article>
+
+            <article class="portal-detail" id="computer-software">
+                <div class="portal-icon">💻</div>
+                <h3>COMPUTER SOFTWARE</h3>
+                <p>
+                    Explore Windows installation,
+                    computer drivers, software applications
+                    and PC maintenance.
+                </p>
+                <a href="#contact">CONTACT FOR SUPPORT</a>
+            </article>
+
+            <article class="portal-detail" id="technology-updates">
+                <div class="portal-icon">🌐</div>
+                <h3>TECHNOLOGY UPDATES</h3>
+                <p>
+                    Discover information about new technology,
+                    computer systems, mobile applications
+                    and digital developments.
+                </p>
+                <a href="#contact">CONTACT FOR SUPPORT</a>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <h2 class="section-title">OUR PROFESSIONAL SERVICES</h2>
+
+        <p class="section-description">
+            Quality technology services you can trust.
+        </p>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <img src="images/phone-repair.jpg"
+                     alt="Phone Repair Service"
+                     loading="lazy">
+                <h3>PHONE REPAIR</h3>
+                <p>
+                    Professional mobile phone troubleshooting
+                    and repair services.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/phone-flashing.jpg"
+                     alt="Phone Flashing Service"
+                     loading="lazy">
+                <h3>PHONE FLASHING</h3>
+                <p>
+                    Mobile software support,
+                    firmware installation and troubleshooting.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/computer-services.jpg"
+                     alt="Computer Services"
+                     loading="lazy">
+                <h3>COMPUTER SERVICES</h3>
+                <p>
+                    Windows installation, computer software
+                    and general PC support.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/software-solutions.jpg"
+                     alt="Software Solutions"
+                     loading="lazy">
+                <h3>SOFTWARE SOLUTIONS</h3>
+                <p>
+                    Software installation, technical assistance
+                    and digital solutions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
     <section class="about" id="about">
-
-        <h2 class="section-title">ABOUT US</h2>
+        <h2 class="section-title">ABOUT MANDELA PHONE SOLUTIONS</h2>
 
         <p>
-            Mandela Phone Solutions is dedicated
-            to providing reliable phone repair,
-            computer services and software solutions.
+            Welcome to MANDELA PHONE SOLUTIONS,
+            your technology service destination.
         </p>
 
         <p>
-            Our mission is to provide quality
-            technology support and reliable
-            customer service.
+            We focus on phone repair, phone flashing,
+            computer services and software solutions.
+            Our goal is to provide reliable technical
+            support and help people solve technology problems.
         </p>
 
         <h3>OUR MISSION</h3>
 
         <p>
-            Making technology solutions
-            accessible to everyone.
+            To provide quality technology services
+            and make digital solutions accessible to everyone.
         </p>
 
+        <h3>OUR MOTTO</h3>
+        <p>TECHNOLOGY SOLVED</p>
     </section>
 
 
     <!-- CONTACT SECTION -->
-
     <section class="contact" id="contact">
-
         <h2 class="section-title">CONTACT US</h2>
 
         <p>
-            Need help with your phone or computer?
-            Contact us today.
+            Need technical assistance?
+            Get in touch with MANDELA PHONE SOLUTIONS.
         </p>
 
         <div class="contact-buttons">
 
-            <a href="https://wa.me/265998013135" target="_blank">
-                WhatsApp: +265 998 013 135
-            </a>
-
-            <a href="https://wa.me/265880887630" target="_blank">
-                WhatsApp: +265 880 887 630
-            </a>
-
             <a href="tel:+265998013135">
-                Call: +265 998 013 135
+                CALL: +265 998 013 135
+            </a>
+
+            <a href="https://wa.me/265998013135"
+               target="_blank"
+               rel="noopener noreferrer">
+                WHATSAPP: +265 998 013 135
             </a>
 
             <a href="tel:+265880887630">
-                Call: +265 880 887 630
+                CALL: +265 880 887 630
+            </a>
+
+            <a href="https://wa.me/265880887630"
+               target="_blank"
+               rel="noopener noreferrer">
+                WHATSAPP: +265 880 887 630
+            </a>
+
+            <a href="tel:+265980752619">
+                CALL ONLY: 098 075 2619
             </a>
 
         </div>
 
         <p class="location">
-            Location: Zomba Town, near Sakata Trading Centre
+            LOCATION: Zomba Town, near Sakata Trading Centre, Malawi.
         </p>
-
     </section>
 
 
     <!-- FOOTER -->
-
     <footer>
-
         <h3>MANDELA PHONE SOLUTIONS</h3>
-
         <h4>TECHNOLOGY SOLVED</h4>
 
         <p>
-            Your trusted partner for phone repair,
-            computer services and software solutions.
+            Phone Repair | Phone Flashing |
+            Computer Services | Software Solutions
         </p>
+
+        <p>Zomba Town, near Sakata Trading Centre, Malawi.</p>
 
         <p>
-            © 2026 Mandela Phone Solutions.
-            All Rights Reserved.
+            CALL / WHATSAPP:
+            +265 998 013 135 |
+            +265 880 887 630
         </p>
 
+        <p>CALL ONLY: 098 075 2619</p>
+
+        <p>
+            &copy; <span id="currentYear"></span>
+            MANDELA PHONE SOLUTIONS.
+            All Rights Reserved.
+        </p>
     </footer>
 
+
+    <!-- FLOATING WHATSAPP ICON WITH TWO NUMBERS -->
+    <details class="whatsapp-float">
+
+        <summary class="whatsapp-trigger">
+            <span class="whatsapp-icon">💬</span>
+        </summary>
+
+        <div class="whatsapp-options">
+
+            <a href="https://wa.me/265998013135"
+               target="_blank"
+               rel="noopener noreferrer">
+                WhatsApp 1: +265 998 013 135
+            </a>
+
+            <a href="https://wa.me/265880887630"
+               target="_blank"
+               rel="noopener noreferrer">
+                WhatsApp 2: +265 880 887 630
+            </a>
+
+        </div>
+    </details>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const portalSearch =
+            document.getElementById("portalSearch");
+
+        const portalCards =
+            document.querySelectorAll(".portal-card");
+
+        const noResults =
+            document.getElementById("noResults");
+
+        portalSearch.addEventListener("input", function () {
+            const searchText =
+                this.value.toLowerCase().trim();
+
+            let visibleCards = 0;
+
+            portalCards.forEach(function (card) {
+                const cardText = (
+                    card.textContent + " " +
+                    card.dataset.search
+                ).toLowerCase();
+
+                const matches =
+                    cardText.includes(searchText);
+
+                card.style.display =
+                    matches ? "" : "none";
+
+                if (matches) {
+                    visibleCards++;
+                }
+            });
+
+            noResults.style.display =
+                visibleCards === 0 ? "block" : "none";
+        });
+
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
 </html>
