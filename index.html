@@ -22,6 +22,7 @@
 <body>
 
     <!-- NAVIGATION BAR -->
+
     <nav class="navbar">
 
         <div class="logo">
@@ -43,18 +44,36 @@
 
         </div>
 
-        <div class="nav-links">
+        <!-- MOBILE MENU BUTTON -->
+
+        <button class="nav-toggle"
+                id="navToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+
+            ☰
+
+        </button>
+
+        <!-- NAVIGATION LINKS -->
+
+        <div class="nav-links" id="navLinks">
+
             <a href="#home">HOME</a>
             <a href="#portal">TECHNICAL PORTAL</a>
             <a href="#services">SERVICES</a>
             <a href="#about">ABOUT</a>
             <a href="#contact">CONTACT</a>
+
         </div>
 
     </nav>
 
 
     <!-- HOME / HERO SECTION -->
+
     <header class="hero" id="home">
 
         <p class="welcome">
@@ -66,9 +85,11 @@
         <h2>TECHNOLOGY SOLVED</h2>
 
         <p class="hero-description">
+
             Your trusted destination for phone repair,
             phone flashing, computer services and
             professional software solutions.
+
         </p>
 
         <div class="hero-buttons">
@@ -87,6 +108,7 @@
 
 
     <!-- SEARCH SECTION -->
+
     <section class="search-section">
 
         <h2>SEARCH OUR TECHNICAL PORTAL</h2>
@@ -109,6 +131,7 @@
 
 
     <!-- TECHNICAL PORTAL -->
+
     <section class="portal" id="portal">
 
         <h2 class="section-title">
@@ -248,6 +271,7 @@
 
 
     <!-- PORTAL DETAILS -->
+
     <section class="portal-details">
 
         <h2 class="section-title">
@@ -259,6 +283,7 @@
         </p>
 
         <div class="portal-details-container">
+
 
             <article class="portal-detail" id="firmware">
 
@@ -380,6 +405,7 @@
 
 
     <!-- SERVICES SECTION -->
+
     <section class="services" id="services">
 
         <h2 class="section-title">
@@ -391,6 +417,7 @@
         </p>
 
         <div class="service-container">
+
 
             <div class="service-card">
 
@@ -461,6 +488,7 @@
 
 
     <!-- ABOUT SECTION -->
+
     <section class="about" id="about">
 
         <h2 class="section-title">
@@ -494,6 +522,7 @@
 
 
     <!-- CONTACT SECTION -->
+
     <section class="contact" id="contact">
 
         <h2 class="section-title">
@@ -547,6 +576,7 @@
 
 
     <!-- FOOTER -->
+
     <footer>
 
         <h3>MANDELA PHONE SOLUTIONS</h3>
@@ -580,10 +610,13 @@
 
 
     <!-- FLOATING WHATSAPP ICON -->
+
     <details class="whatsapp-float">
 
         <summary class="whatsapp-trigger">
+
             <span class="whatsapp-icon">💬</span>
+
         </summary>
 
         <div class="whatsapp-options">
@@ -611,7 +644,56 @@
 
 
     <!-- JAVASCRIPT -->
+
     <script>
+
+        // MOBILE NAVIGATION MENU
+
+        const navToggle =
+            document.getElementById("navToggle");
+
+        const navbar =
+            document.querySelector(".navbar");
+
+        const navLinks =
+            document.querySelectorAll("#navLinks a");
+
+
+        navToggle.addEventListener("click", function () {
+
+            const isOpen =
+                navbar.classList.toggle("menu-open");
+
+            navToggle.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            navToggle.innerHTML =
+                isOpen ? "✕" : "☰";
+
+        });
+
+
+        navLinks.forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navbar.classList.remove("menu-open");
+
+                navToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                navToggle.innerHTML = "☰";
+
+            });
+
+        });
+
+
+        // TECHNICAL PORTAL SEARCH
 
         const portalSearch =
             document.getElementById("portalSearch");
@@ -657,6 +739,8 @@
         });
 
 
+        // AUTOMATIC COPYRIGHT YEAR
+
         document.getElementById("currentYear").textContent =
             new Date().getFullYear();
 
@@ -665,4 +749,3 @@
 </body>
 
 </html>
-]
